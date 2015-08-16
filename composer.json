@@ -1,0 +1,19 @@
+{
+    "name": "lucianmariusadam/multicombinator",
+    "description": "generate all combinations of multiple arrays",
+    "keywords": ["combinations", "combinatorics", "math", "touple"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucian Marius Adam",
+            "email": "lucianmariusadam@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+     "autoload": {
+        "psr-4": {"LucianMariusAdam\\MultiCombinator\\": ""}
+    }
+}
