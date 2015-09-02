@@ -97,7 +97,15 @@ class MultiCombinator implements \Iterator
         }
         else
         {
-            $this->lists         = array_values( $lists );
+            // we use keys: 0..n to support iteration
+            $this->lists = array_values( $lists );
+
+            // discard value keys
+            array_walk( $this->lists, function ( &$e )
+            {
+                $e = array_values( $e );
+            } );
+
             $this->list_count    = count( $this->lists );
             $this->original_keys = array_keys( $lists );
 
