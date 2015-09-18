@@ -82,7 +82,7 @@ class MultiCombinator implements \Iterator
 
         foreach ( $lists as $key => $list )
         {
-            $list = (array) $list;
+            $lists[ $key ] = $list = (array) $list;
 
             if ( empty( $list ) )
             {
